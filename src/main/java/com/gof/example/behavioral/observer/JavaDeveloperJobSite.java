@@ -7,11 +7,12 @@ public class JavaDeveloperJobSite implements Observed {
     List<String> vacancies = new ArrayList<>();
     List<Observer> subscribers = new ArrayList<>();
 
-    public void addVacancy(String vacancy){
+    public void addVacancy(String vacancy) {
         this.vacancies.add(vacancy);
         notifyObservers();
     }
-    public void removeVacancy(String vacancy){
+
+    public void removeVacancy(String vacancy) {
         this.vacancies.remove(vacancy);
         notifyObservers();
     }
@@ -28,7 +29,7 @@ public class JavaDeveloperJobSite implements Observed {
 
     @Override
     public void notifyObservers() {
-        for (Observer observer: subscribers){
+        for (Observer observer : subscribers) {
             observer.handleEvent(this.vacancies);
         }
     }

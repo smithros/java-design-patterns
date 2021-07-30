@@ -1,6 +1,6 @@
 package com.gof.example.behavioral.chain;
 
-public class SMSNotifier extends  Notifier {
+public class SMSNotifier extends Notifier {
 
     public SMSNotifier(int priority) {
         super(priority);

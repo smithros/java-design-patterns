@@ -1,7 +1,7 @@
 package com.gof.example.behavioral.chain;
 
 public abstract class Notifier {
-    private int priority;
+    private final int priority;
     private Notifier nextNotifier;
 
     public Notifier(int priority) {
@@ -12,13 +12,15 @@ public abstract class Notifier {
         this.nextNotifier = nextNotifier;
 
     }
-    public void notifyManager(String message, int level){
-        if (level >= priority){
+
+    public void notifyManager(String message, int level) {
+        if (level >= priority) {
             write(message);
         }
-        if (nextNotifier != null){
+        if (nextNotifier != null) {
             nextNotifier.notifyManager(message, level);
         }
     }
-    public abstract void write (String message);
+
+    public abstract void write(String message);
 }

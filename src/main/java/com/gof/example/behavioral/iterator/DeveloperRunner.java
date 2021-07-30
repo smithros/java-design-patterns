@@ -2,7 +2,7 @@ package com.gof.example.behavioral.iterator;
 
 public class DeveloperRunner {
     public static void main(String[] args) {
-        String[] skills = {"Java", "Spring","Hibernate","Maven","MySQL"};
+        String[] skills = {"Java", "Spring", "Hibernate", "Maven", "MySQL"};
 
         JavaDeveloper javaDeveloper = new JavaDeveloper("Vasya Pupkin", skills);
 
@@ -10,7 +10,7 @@ public class DeveloperRunner {
         System.out.println("Developer: " + javaDeveloper.getName());
         System.out.println("Skills: ");
 
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next().toString() + " ");
         }
     }

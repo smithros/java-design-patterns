@@ -1,6 +1,5 @@
 package com.gof.example.behavioral.template;
 
-
 public class WebsiteRunner {
     public static void main(String[] args) {
         WebsiteTemplate welcomePage = new WelcomePage();

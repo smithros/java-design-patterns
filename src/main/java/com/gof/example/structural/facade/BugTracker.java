@@ -6,11 +6,13 @@ public class BugTracker {
     public boolean isActiveSprint() {
         return activeSprint;
     }
-    public void startSprint(){
+
+    public void startSprint() {
         System.out.println("Sprint is active");
         activeSprint = true;
     }
-    public void finishSprint(){
+
+    public void finishSprint() {
         System.out.println("Sprint is not active");
         activeSprint = false;
     }

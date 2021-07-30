@@ -1,6 +1,6 @@
 package com.gof.example.behavioral.mediator;
 
-public class SimpleChatRunner  {
+public class SimpleChatRunner {
     public static void main(String[] args) {
         SimpleTextChat chat = new SimpleTextChat();
 
@@ -12,9 +12,9 @@ public class SimpleChatRunner  {
         chat.addUserToChat(user1);
         chat.addUserToChat(user2);
 
-        user1.sendeMessage("Hello, guys!");
-        user2.sendeMessage("Nice to hear you!");
-        admin.sendeMessage("Im admin!");
+        user1.sendMessage("Hello, guys!");
+        user2.sendMessage("Nice to hear you!");
+        admin.sendMessage("Im admin!");
 
     }
 }

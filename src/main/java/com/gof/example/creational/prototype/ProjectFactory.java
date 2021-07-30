@@ -10,7 +10,8 @@ public class ProjectFactory {
     public void setProject(Project project) {
         this.project = project;
     }
-    Project cloneProject(){
+
+    Project cloneProject() {
         return (Project) project.copy();
     }
 }

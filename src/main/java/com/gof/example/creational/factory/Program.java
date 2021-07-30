@@ -1,6 +1,7 @@
 package com.gof.example.creational.factory;
 
 import java.util.Scanner;
+
 public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,12 +11,13 @@ public class Program {
         Developer developer = developerFactory.createDeveloper();
         developer.writeCode();
     }
-    private static DeveloperFactory createDeveloperBySpecialty(String specialty){
-        if (specialty.equalsIgnoreCase("Java")){
-            return  new JavaDeveloperFactory();
-        }else if(specialty.equalsIgnoreCase("C++")){
+
+    private static DeveloperFactory createDeveloperBySpecialty(String specialty) {
+        if (specialty.equalsIgnoreCase("Java")) {
+            return new JavaDeveloperFactory();
+        } else if (specialty.equalsIgnoreCase("C++")) {
             return new CppDeveloperFactory();
-        }else {
+        } else {
             throw new RuntimeException(specialty + " is unknown specialty");
         }
     }

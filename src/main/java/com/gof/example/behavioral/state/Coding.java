@@ -1,6 +1,6 @@
 package com.gof.example.behavioral.state;
 
-public class Coding implements Activity{
+public class Coding implements Activity {
     @Override
     public void justDoIt() {
         System.out.println("Writing code...");

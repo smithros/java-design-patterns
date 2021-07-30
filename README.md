@@ -9,7 +9,7 @@ All patterns are divided into 3 main types:
 
 * Behavioral
 * Creational
-* Structural.
+* Structural
 
 # Behavioral: 
 * Chain 
@@ -29,7 +29,7 @@ All patterns are divided into 3 main types:
 * Builder
 * Factory
 * Prototype
-* Singleton.
+* Singleton
 
 # Structural: 
 * Adapter

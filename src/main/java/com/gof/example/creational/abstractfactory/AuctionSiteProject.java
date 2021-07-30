@@ -13,4 +13,5 @@ public class AuctionSiteProject {
         developer.writeCode();
         tester.testCode();
         manager.manageCode();
-}}
+    }
+}

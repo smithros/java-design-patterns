@@ -1,6 +1,6 @@
 package com.gof.example.behavioral.chain;
 
-public class EmailNotify extends  Notifier{
+public class EmailNotify extends Notifier {
 
     public EmailNotify(int priority) {
         super(priority);

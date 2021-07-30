@@ -8,10 +8,10 @@ public class JobSearch {
         jobSite.addVacancy("Second Java position");
 
         Observer firstSubscriber = new Subscriber("Vasya Pupkin");
-        Observer secnondSubscriber = new Subscriber("Petya Vorotynsev");
+        Observer secondSubscriber = new Subscriber("Petya Vorotynsev");
 
         jobSite.addObserver(firstSubscriber);
-        jobSite.addObserver(secnondSubscriber);
+        jobSite.addObserver(secondSubscriber);
 
         jobSite.addVacancy("Third Java Position");
 

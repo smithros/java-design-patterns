@@ -1,7 +1,7 @@
 package com.gof.example.structural.proxy;
 
-public class ProxyProject implements Project{
-    private String url;
+public class ProxyProject implements Project {
+    private final String url;
     private RealProject realProject;
 
     public ProxyProject(String url) {
@@ -10,7 +10,7 @@ public class ProxyProject implements Project{
 
     @Override
     public void run() {
-        if(realProject == null){
+        if (realProject == null) {
             realProject = new RealProject(url);
         }
         realProject.run();

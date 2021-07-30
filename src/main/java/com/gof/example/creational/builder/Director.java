@@ -2,10 +2,12 @@ package com.gof.example.creational.builder;
 
 public class Director {
     WebsiteBuilder builder;
-    public void setBuilder(WebsiteBuilder builder){
+
+    public void setBuilder(WebsiteBuilder builder) {
         this.builder = builder;
     }
-    Website buildWebsite(){
+
+    Website buildWebsite() {
         builder.createWebsite();
         builder.buildCms();
         builder.buildPrice();

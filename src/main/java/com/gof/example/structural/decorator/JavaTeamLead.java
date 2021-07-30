@@ -5,11 +5,12 @@ public class JavaTeamLead extends DeveloperDecorator {
         super(developer);
     }
 
-    public String sendWeekReport(){
+    public String sendWeekReport() {
         return "Send week report to customer";
     }
+
     @Override
-    public String makeJob(){
+    public String makeJob() {
         return super.makeJob() + sendWeekReport();
     }
 }

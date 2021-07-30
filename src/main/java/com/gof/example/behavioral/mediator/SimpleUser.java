@@ -26,7 +26,7 @@ public class SimpleUser implements User {
     }
 
     @Override
-    public void sendeMessage(String message) {
+    public void sendMessage(String message) {
         chat.sendMessage(message, this);
     }
 

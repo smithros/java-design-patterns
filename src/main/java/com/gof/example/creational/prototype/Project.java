@@ -1,13 +1,13 @@
 package com.gof.example.creational.prototype;
 
-public class Project implements Copyable{
+public class Project implements Copyable {
     private int id;
-    private String projectname;
+    private String projectName;
     private String sourceCode;
 
-    public Project(int id, String projectname, String sourceCode) {
+    public Project(int id, String pname, String sourceCode) {
         this.id = id;
-        this.projectname = projectname;
+        this.projectName = pname;
         this.sourceCode = sourceCode;
     }
 
@@ -19,12 +19,12 @@ public class Project implements Copyable{
         this.id = id;
     }
 
-    public String getProjectname() {
-        return projectname;
+    public String getProjectName() {
+        return projectName;
     }
 
-    public void setProjectname(String projectname) {
-        this.projectname = projectname;
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
     }
 
     public String getSourceCode() {
@@ -38,18 +38,15 @@ public class Project implements Copyable{
 
     @Override
     public Object copy() {
-        Project copy = new Project(id,projectname,sourceCode);
-        return copy;
-
-
+        return new Project(id, projectName, sourceCode);
     }
 
     @Override
     public String toString() {
         return "Project{" +
-                "id=" + id +
-                ", projectname='" + projectname + '\'' +
-                ", sourceCode='" + sourceCode + '\'' +
-                '}';
+            "id=" + id +
+            ", projectname='" + projectName + '\'' +
+            ", sourceCode='" + sourceCode + '\'' +
+            '}';
     }
 }

@@ -1,6 +1,6 @@
 package com.gof.example.behavioral.command;
 
-public class InsertCommand implements Command{
+public class InsertCommand implements Command {
     DataBase dataBase;
 
     public InsertCommand(DataBase dataBase) {

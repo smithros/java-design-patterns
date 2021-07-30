@@ -4,7 +4,7 @@ public class JavaDeveloper implements Collection {
     private String name;
     private String[] skills;
 
-    public JavaDeveloper(String name, String[] skills){
+    public JavaDeveloper(String name, String[] skills) {
         this.name = name;
         this.skills = skills;
     }
@@ -24,13 +24,13 @@ public class JavaDeveloper implements Collection {
     public void setSkills(String[] skills) {
         this.skills = skills;
     }
+
     @Override
-    public Iterator getIterator(){
+    public Iterator getIterator() {
         return new SkillIterator();
     }
 
-
-    private class SkillIterator implements Iterator{
+    private class SkillIterator implements Iterator {
         int index;
 
         @Override

@@ -12,6 +12,6 @@ public class Subscriber implements Observer {
     @Override
     public void handleEvent(List<String> vacancies) {
         System.out.println("Dear " + name + "\n we have some changes in vacancies\n" + vacancies +
-        "\n======================================================================\n");
+            "\n======================================================================\n");
     }
 }

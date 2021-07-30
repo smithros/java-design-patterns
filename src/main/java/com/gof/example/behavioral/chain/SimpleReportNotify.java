@@ -1,8 +1,8 @@
 package com.gof.example.behavioral.chain;
 
-public class SimpleReportNotify extends Notifier{
+public class SimpleReportNotify extends Notifier {
 
-    public SimpleReportNotify(int priority){
+    public SimpleReportNotify(int priority) {
         super(priority);
     }
 

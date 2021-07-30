@@ -1,7 +1,7 @@
 package com.gof.example.behavioral.interpreter;
 
-public class TerminalExpression implements Expression{
-    private String data;
+public class TerminalExpression implements Expression {
+    private final String data;
 
     public TerminalExpression(String data) {
         this.data = data;
@@ -9,9 +9,6 @@ public class TerminalExpression implements Expression{
 
     @Override
     public boolean interpret(String context) {
-        if(context.contains(data)){
-            return true;
-        }
-        return false;
+        return context.contains(data);
     }
 }
